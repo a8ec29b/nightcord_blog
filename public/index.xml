@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nightcord blog</title>
+    <link>http://blog.nightcord.org/</link>
+    <description>Recent content on Nightcord blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 08 Aug 2023 21:25:20 +0800</lastBuildDate><atom:link href="http://blog.nightcord.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Post01</title>
+      <link>http://blog.nightcord.org/posts/post01/</link>
+      <pubDate>Tue, 08 Aug 2023 21:25:20 +0800</pubDate>
+      
+      <guid>http://blog.nightcord.org/posts/post01/</guid>
+      <description>Test content</description>
+    </item>
+    
+  </channel>
+</rss>

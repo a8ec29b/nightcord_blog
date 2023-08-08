@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://blog.nightcord.org/</loc>
+    <lastmod>2023-08-08T21:25:20+08:00</lastmod>
+  </url><url>
+    <loc>http://blog.nightcord.org/posts/post01/</loc>
+    <lastmod>2023-08-08T21:25:20+08:00</lastmod>
+  </url><url>
+    <loc>http://blog.nightcord.org/posts/</loc>
+    <lastmod>2023-08-08T21:25:20+08:00</lastmod>
+  </url><url>
+    <loc>http://blog.nightcord.org/categories/</loc>
+  </url><url>
+    <loc>http://blog.nightcord.org/tags/</loc>
+  </url>
+</urlset>
