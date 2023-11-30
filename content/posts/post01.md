@@ -160,3 +160,6 @@ sh get-docker.sh
 ```
 
 安装完之后需要把自己加入Docker用户组（或者使用sudo来使用docker）：
+```bash
+sudo usermod -aG docker $USER$
+```
