@@ -3,7 +3,7 @@ title: "个人自留/Debian系统新开机后初始设置"
 date: 2023-11-30
 draft: false
 ---
-
+<!--more-->
 ### 1.apt update & apt upgrade
 
 //TODO：如何更改软件源
