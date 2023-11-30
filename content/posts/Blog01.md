@@ -1,4 +1,8 @@
-# 个人自留/Debian系统新开机后初始设置
+---
+title: "个人自留/Debian系统新开机后初始设置"
+date: 2023-11-30
+draft: false
+---
 
 ### 1.apt update & apt upgrade
 
