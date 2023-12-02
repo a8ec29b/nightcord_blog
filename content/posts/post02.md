@@ -39,7 +39,8 @@ singbox的在box for magisk中的配置在/data/adb/box/sing-box/config.json中�
 下面是一些要注意的地方：  
 
 1.导入你的配置文件时，singbox在1.8.0版本中，实验性功能下弃用了一些原有的选项，并转而使用cached_files。因此首先需要检查自己的singbox配置在experimental这儿开启了clash_api和cache_file，并且正确配置。  
-为什么这是必要的？因为如果一份配置文件中有多个节点或selector的话，通过clash_api或是v2fly_api来切换是比较方便的。下面是一个配置示例：（更多的自定义请自行参考[sing-box说明文档][sing-box说明文档]
+
+为什么这是必要的？因为如果一份配置文件中有多个节点或selector的话，通过clash_api或是v2fly_api来切换是比较方便的。下面是一个配置示例：（更多的自定义请自行参考[sing-box说明文档][sing-box说明文档]）
 ```json
 "experimental": {
     "clash_api": 
