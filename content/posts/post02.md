@@ -48,7 +48,7 @@ singbox的在box for magisk中的配置在/data/adb/box/sing-box/config.json中�
         "external_controller": "127.0.0.1:9090", 
         "secret": "Nightcord_at_25:00"
     },
-    "cached_file":
+    "cache_file":
     {
         "enabled": true,
         "store_fakeip": false
