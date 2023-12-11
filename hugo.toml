@@ -8,3 +8,4 @@ theme = 'ananke'
   description = "a8ec29b"
   body_classes = "avenir bg-dark-gray"
   text_color = "white"
+  title_color = "white"
