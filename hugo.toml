@@ -6,3 +6,4 @@ theme = 'ananke'
 [params]
   background_color_class = "bg-grey"
   description = "a8ec29b"
+  text_color = "white"
