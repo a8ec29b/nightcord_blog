@@ -1,5 +1,5 @@
 ---
-title: "个人自留/Debian系统新开机后初始设置"
+title: "<font color=white>个人自留/Debian系统新开机后初始设置</font>"
 date: 2023-11-30
 draft: false
 ---
