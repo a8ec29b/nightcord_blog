@@ -31,8 +31,7 @@ su -c /data/adb/box/scripts/box.tool all
 ### 2.导入配置
 singbox的在box for magisk中的配置在/data/adb/box/sing-box/config.json中。如果使用shell(su)的话只有vi用，或者在termux中就可以配合sudo来使用vim打开它。  
 
-我的使用场景是把自己的本地的配置文件修改并导入。
-（TODO：如何添加singbox订阅链接？）
+我的使用场景是把自己的本地的配置文件修改并导入。  
 
 首先你需要确保你有一份sing-box的配置文件，或者订阅链接。其他内核的配置需要进行订阅转换（或者直接使用其他核心。）  
 
@@ -59,7 +58,14 @@ singbox的在box for magisk中的配置在/data/adb/box/sing-box/config.json中�
 
 其余注意事项请参考官方文档。
 
-接着需要到/data/adb/box/settings.ini中修改内核，将bin_name后的值修改为sing-box。
+接着需要到/data/adb/box/settings.ini中修改内核，将bin_name后的值修改为sing-box。  
+
+//（TODO：如何添加singbox订阅链接？）  
+实际上box for magisk没有提供singbox的订阅更新，当前版本1.4.2只提供了clash的订阅更新。
+所以自己写个脚本，想更新的时候跑一下，跑完重启box for magisk即可：
+```bash
+sudo wget $sing-box订阅链接$ -O /data/adb/box/sing-box/config.json
+```
 
 ### 3.启动服务
 （理论上）在Magisk中启用模块，透明代理就启动了。但是在Shell中使用命令启动可以方便看到log和报错。启动前建议关闭本机代理。  
