@@ -109,7 +109,7 @@ export async function handleRequest(request){
 
 route设置：example.com/.well-known/matrix/*
 
-由于已经关闭了用户注册，所以手动注册一个账户：
+由于已经关闭了用户注册，所以手动注册一个账户：(请根据实际情况在docker容器内跑并选择正确配置文件）
 ```bash
 register_new_matrix_user -c /etc/matrix-synapse/homeserver.yaml http://localhost:8008
 ```
