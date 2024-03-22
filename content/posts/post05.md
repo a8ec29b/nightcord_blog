@@ -17,21 +17,21 @@ draft: false
 
 首先生成synapse配置文件：
 
-'''bash
+```bash
 docker run -it --rm -v ~/synapse/synapse-data/:/data/ -e SYNAPSE_SERVER_NAME=nightcord.org -e SYNAPSE_REPORT_STATS=no matrixdotorg/synapse:latest generate
-'''
+```
 
 第一次就需要确定好生成的位置，否则生成之后挪动可能会出现权限不足的问题。出现权限不足重新生成即可。
 
 在cloudflare zero trust设置matrix.nightcord.org的tunnel时，将需要暴露的链接设置为：
 
-'''
+```
 http://synapse（与下方container name相同）:8008
-'''
+```
 
 接着使用docker-compose：
 
-'''yaml
+```yaml
 version: '3'
 
 services:
@@ -52,13 +52,13 @@ services:
       - run
     environment:
       - TUNNEL_TOKEN=nightcord at 25:00
-'''
+```
 
 启动之后访问网站，看到中间的matrix标志就是成功启动了。
 
 接着设置cloudflare worker：
 
-'''javascript
+```javascript
 addEventListener("fetch", (event) => {
   event.respondWith(
     handleRequest(event.request).catch(
@@ -105,15 +105,14 @@ export async function handleRequest(request){
     return new Response('Not Found.', { status: 404 })
   }
 }
-'''
+```
 
 route设置：example.com/.well-known/matrix/*
 
 由于已经关闭了用户注册，所以手动注册一个账户：
-
-'''bash
+```bash
 register_new_matrix_user -c /etc/matrix-synapse/homeserver.yaml http://localhost:8008
-'''
+```
 
 然后就可以登录开始用了。
 
