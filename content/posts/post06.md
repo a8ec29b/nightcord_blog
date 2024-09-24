@@ -35,7 +35,7 @@ cat /system/build.prop
 ```
 
 cat build.prop之后寻找"simswitchpword"或类似语句，不同棒子可能不一样。后面的值就是切卡密码。获得密码之后前往后台切换到外置卡槽，然后重启，使关闭无信号自动重启的策略生效。  
-重启后使用星海工具，强开端口并备份qcn。**备份时请勿插卡！**备份出来的qcn理应在553-558KiB之间。目前我仅碰到过一次qcn为538KiB且最后能正常使用的。  
+重启后使用星海工具，强开端口并备份qcn。 **备份时请勿插卡！** 备份出来的qcn理应在553-558KiB之间。目前我仅碰到过一次qcn为538KiB且最后能正常使用的。  
 
 ![](https://alist.nightcord.org/d/imgprivate/post06-fig02.png)
 
@@ -50,8 +50,8 @@ cat build.prop之后寻找"simswitchpword"或类似语句，不同棒子可能�
 恢复好QCN后就可以刷入Debian了，这里使用酷安-jsbsbxjxh66制作的Debian12。或许你也可以看看Openstick项目并自编译一个，但是我未尝试过，也不知道最终能不能用。  
 刷好之后打开设备管理器，找到未知设备，或者是Android Device，升级它的驱动，将它的驱动更改为如图所示相同：（如果此时你的电脑已经可以连上adb shell了，则不需要更改）  
 
-![](https://alist.nightcord.org/d/imgprivate/post06-fig04.png)
 ![](https://alist.nightcord.org/d/imgprivate/post06-fig05.png)
+![](https://alist.nightcord.org/d/imgprivate/post06-fig04.png)
 
 接着进入adb shell。
 
