@@ -1,5 +1,5 @@
 ---
-title: "可插拔eSIM：较为知名的Removable euicc对比"
+title: "较为知名的可插拔eSIM对比"
 date: 2024-10-03
 draft: false
 ---
