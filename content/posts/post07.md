@@ -19,19 +19,19 @@ iPhone没有OMAPI，~~想要的话可以做法让欧盟敲打敲打苹果开放�
 5ber显示某卡槽兼容 = 这个卡槽具有OMAPI功能 = 5ber/eSIM.me/eSTK lite/9eSIM v2.1/樱花二/PlanB 兼容且可用  
 
 1. ARA-M相关  
-1.1 许多的可插拔eSIM卡中都内置了ARA-M。简单来说ARA-M是一个鉴权用的玩意。在安卓系统上，系统读取到的卡片里的ARA-M是啥，就对应着哪个App可以管理这个卡。    
+(1.1) 许多的可插拔eSIM卡中都内置了ARA-M。简单来说ARA-M是一个鉴权用的玩意。在安卓系统上，系统读取到的卡片里的ARA-M是啥，就对应着哪个App可以管理这个卡。    
 例如5ber中内置了5ber自己的两个ARA-M，安卓系统发现其中一个能跟5ber App匹配上，那么就允许你通过你安装好的5ber App管理5ber卡片。  
 
-1.2 [SEBypass](https://github.com/EsimMoe/SecureElementAccessBypass/releases/tag/v1.0)是一个使系统内鉴权失效的模块，需要安卓手机root后安装LSPosed后才可激活。激活后可无视ARA-M限制，使用任意的管理器来管理已插入手机的可插拔eSIM卡。  
+(1.2) [SEBypass](https://github.com/EsimMoe/SecureElementAccessBypass/releases/tag/v1.0)是一个使系统内鉴权失效的模块，需要安卓手机root后安装LSPosed后才可激活。激活后可无视ARA-M限制，使用任意的管理器来管理已插入手机的可插拔eSIM卡。  
 
-1.3 部分卡商存在卖Profile下载次数的销售策略，例如eSIM.me，5ber，PlanB。如果你的手机有root则可以通过SEBypass，使用其他管理器来管理卡片，从而绕过下载次数限制。例如限制两个Profile的eSIM.me，安装SEBypass后可以通过Easyeuicc写入大于两个的Profile，这样就不用向eSIM.me交更多钱了。（**实际上不推荐专门买卡来这么做**，因为有root的话有性价比极高的樱花一可用，犯不着买这种卡，参见后文）  
+(1.3) 部分卡商存在卖Profile下载次数的销售策略，例如eSIM.me，5ber，PlanB。如果你的手机有root则可以通过SEBypass，使用其他管理器来管理卡片，从而绕过下载次数限制。例如限制两个Profile的eSIM.me，安装SEBypass后可以通过Easyeuicc写入大于两个的Profile，这样就不用向eSIM.me交更多钱了。（**实际上不推荐专门买卡来这么做**，因为有root的话有性价比极高的樱花一可用，犯不着买这种卡，参见后文）  
 
-1.4 部分卡商极为良心地公开了自己卡片的证书（9eSIM v2.1），或者是极为良心的把社区证书的ARA-M写入了卡片（樱花2），或者是直接自定义ARA-M（eSTK.me），这些卡的可玩性极高，你可以自己拿着证书去重签名各种管理器然后拿来用，~~比如你要是和我一样觉得9eSIM的小程序实在是太丑了，那可以直接去重签名一个EasyEuicc来用（9eSIM甚至官网提供了社区重签名好的EasyEuicc）~~  
+(1.4) 部分卡商极为良心地公开了自己卡片的证书（9eSIM v2.1），或者是极为良心的把社区证书的ARA-M写入了卡片（樱花2），或者是直接自定义ARA-M（eSTK.me），这些卡的可玩性极高，你可以自己拿着证书去重签名各种管理器然后拿来用，~~比如你要是和我一样觉得9eSIM的小程序实在是太丑了，那可以直接去重签名一个EasyEuicc来用（9eSIM甚至官网提供了社区重签名好的EasyEuicc）~~  
 
 2. ISD-R shared  
 部分卡片（比如9eSIM v1，手制st33）的ISD-R并非shared。此类卡片在**部分骁龙**手机上无法管理。当然如果你的手机处理器不是骁龙的则可忽略此条。  
 
-3. 容量
+3. 容量  
 其实每张卡片都没法去定义【这张卡能存几个eSIM】，因为这类可插拔eSIM都有一定的容量。而且每一个profile的大小都不一样，需要查看profile的大小可参考： [漫游卡相关杂七杂八](https://sim.obdo.cc/esim-size)  
 例如，9eSIM v2.1的容量约为1.6MiB，相比eSTK.me-eco的420K，能存下的profile应当更多。  
 请注意，东信和平的卡存在配置膨胀问题（每一个profile的实际占用大小大于它自己的大小），因此能存下的卡应当更少。  
